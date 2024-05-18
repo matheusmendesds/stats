@@ -19,6 +19,10 @@ function teste() {
     
     const row = document.createElement('tr')
     row.setAttribute("id", "e" + indice)
+    
+    const btn = document.createElement('button')
+    btn.setAttribute("class","btnSelecionar")
+    btn.innerHTML = 'v'
 
     const jogador = document.createElement("td")
     jogador.setAttribute("id","n" + indice)
@@ -48,7 +52,11 @@ function teste() {
     mPart.setAttribute("id","mp" + indice)
     mPart.innerHTML = mediaPart
 
+    const btnx = document.createElement('button')
+    btnx.setAttribute("class","btnSelecionar")
+    btn.innerHTML = 'v'
 
+    row.appendChild(btn)
     row.appendChild(jogador)
     row.appendChild(idad)
     row.appendChild(jog)
@@ -56,6 +64,7 @@ function teste() {
     row.appendChild(ast)
     row.appendChild(mGol)
     row.appendChild(mPart)
+    row.appendChild(btnx)
 
     table.appendChild(row)
     indice ++
