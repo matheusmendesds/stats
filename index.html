@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats</title>
-    <link rel="stylesheet" href="/src/app/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Estatisticas</h1>
     <main class="container">
+        <h4 class="subtitle">Insira os dados do Atleta:</h4>
         <div class="form">
             <p>
                 <label for="name">Nome:<input type="text" name="name" id="name" maxlength="20" required autocomplete="off"></label>  
             </p>
             <p>
-                <label for="idade"> Idade: <input type="number" name="idade" id="idade" min="0" required></label>
-            
+                <label for="idade"> Idade: <input type="number" name="idade" id="idade" min="0" required></label>   
+            </p>
+            <p>
                 <label for="jogos">Jogos: <input type="number" name="jogos" id="jogos" min="0" required></label>
             </p>
             <p>
                 <label for="gols">Gols:<input type="number" name="gols" id="gols" min="0" required></label>
-            
-                <label for="assist">Assistências: <input type="number" name="assist" id="assist" min="0" required></label>
+                <label for="assist">Assits: <input type="number" name="assist" id="assist" min="0" required></label>
             </p>
             <button value="Enviar" onclick="teste()">Enviar</button>
         </div>
@@ -29,7 +30,6 @@
             <table id="tabela">
                 <thead>
                     <tr>
-                        <td></td>
                         <td>Nome</td>
                         <td>Idade</td>
                         <td>Jogos</td>
@@ -37,7 +37,6 @@
                         <td>Assistências</td>
                         <td>Gols por Jogo</td>
                         <td>Participações em gols por jogo</td>
-                        <td></td>
                     </tr>
                 </thead>
                 <tbody id="tbody">
